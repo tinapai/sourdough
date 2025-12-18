@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patina Artisan Sourdough</title>
+    <style>
+        :root {
+            --cream: #fdfaf5;
+            --clay: #b07d62;
+            --charcoal: #333333;
+            --wheat: #eaddca;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--cream);
+            color: var(--charcoal);
+            line-height: 1.6;
+        }
+
+        header {
+            text-align: center;
+            padding: 4rem 1rem;
+            background-color: var(--wheat);
+            border-bottom: 2px solid var(--clay);
+        }
+
+        h1 { margin: 0; font-size: 3rem; color: var(--clay); }
+        h2 { border-bottom: 2px solid var(--wheat); display: inline-block; padding-bottom: 5px; }
+
+        .container { max-width: 900px; margin: auto; padding: 2rem; }
+
+        .section { margin-bottom: 4rem; text-align: center; }
+
+        /* Gallery Grid */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .photo-placeholder {
+            background-color: #ddd;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+            font-style: italic;
+            color: #666;
+        }
+
+        /* Info Boxes */
+        .info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            text-align: left;
+        }
+
+        .info-card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        .social-link {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: var(--clay);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        footer { text-align: center; padding: 2rem; font-size: 0.9rem; color: #777; }
+
+        @media (max-width: 600px) {
+            .info-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Patina Artisan Sourdough</h1>
+        <p>Small-batch, wild-leavened bread from the heart of the kitchen.</p>
+    </header>
+
+    <div class="container">
+        
+        <section class="section">
+            <h2>Meet the Baker</h2>
+            <p>
+                Welcome to my cottage bakery! I'm Tina. What started as a craving for good bread 
+                and a bit of sourdough starter from a friend turned into a passion for the 
+                sourdough craft and a beautiful way to share and connect with others. It brings me 
+                joy when people say they love my bread, and I am always striving to hone my 
+                technique to make the best bread that I can. My mission with this bakery is to 
+                provide quality fresh bread made with simple ingredients to my local community.
+
+            </p>
+        </section>
+
+        <section class="section">
+            <h2>From the Oven</h2>
+            <div class="gallery">
+                <img src="images/bread_crumb.jpeg" alt="Sourdough Loaf" style="width:100%; border-radius:8px;">
+                <img src="images/bread_slices.png" alt="Sliced Bread" style="width:100%; border-radius:8px;">
+                <img src="images/bread_loaves.png" alt="Sliced Bread" style="width:100%; border-radius:8px;">
+                
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3>Find Us</h3>
+                    <p>
+                        Somewhere<br>
+                        Plano, TX 75024<br>
+
+                        <strong>Contact:</strong> (469) 626- 8341 via text for inquiries
+                    </p>
+                    <a href="https://forms.gle/9sTRNDABkjBGwJBP6">Order Form</a>
+                    <p><em>*Porch pickup only. Please pre-order!  </em></p>
+                </div>
+                <div class="info-card">
+                    <h3>Operating Hours</h3>
+                    <p><strong>Mon - Sat:</strong> closed except for custom arrangements</p>
+                    <p><strong>Sunday:</strong> 8:30 AM - 9:00 AM</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h3>Follow the Journey</h3>
+            <p>Keep up with my bread activities on Instagram.</p>
+            <a href="https://instagram.com/tinasartisansourdough" class="social-link">@tinasartisansourdough</a>
+        </section>
+
+    </div>
+
+    <footer>
+        &copy; 
+    </footer>
+
+</body>
+</html>
